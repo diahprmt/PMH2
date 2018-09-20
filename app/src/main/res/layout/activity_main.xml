@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.example.diah.stepcounterdiah.MainActivity"
+    android:orientation="vertical">
+
+
+
+    <Button
+        android:id="@+id/btn_start_session"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start a Session" />
+
+    <Button
+        android:id="@+id/btn_stop_session"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop a Session" />
+
+    <Button
+        android:id="@+id/btn_insert_segment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insert an Activity Segment " />
+
+    <Button
+        android:id="@+id/btn_read_session"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read Sessions" />
+
+    <Button
+        android:id="@+id/btn_delete_session"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Sessions"/>
+
+    <TextView
+        android:id="@+id/teks1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/teks2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="STOP"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/teks1"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/button1">
+        <com.example.diah.stepcounterdiah.logger.LogView
+            android:id="@+id/sample_logview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" />
+    </ScrollView>
+
+</LinearLayout>
